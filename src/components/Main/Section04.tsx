@@ -1,7 +1,6 @@
 import { useLayoutEffect, useRef } from "react";
 import { Link } from "react-router-dom";
 import { gsap } from "gsap";
-import { ScrollTrigger } from "gsap/all";
 
 const Section04 = () => {
     const containerRef = useRef(null);
