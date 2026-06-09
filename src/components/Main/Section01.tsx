@@ -32,7 +32,7 @@ const Section01 = () => {
             .to(".img4",{opacity:0})
             .to(".txtContainer",{zIndex:-1},"<")
             .to(".scrollImgContainer",{opacity:1})
-            .to(".scrollImgContainer",{x:() => -(scrollRef.current!.scrollWidth - window.innerWidth / 2),ease:"none",duration:8});
+            .to(".scrollImgContainer",{x:() => -(scrollRef.current!.scrollWidth - window.innerWidth / 2),y:"50%",ease:"none",duration:8});
         },containerRef);
 
         return () => ctx.revert();
