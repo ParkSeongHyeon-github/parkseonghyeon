@@ -14,7 +14,7 @@ const Section01 = () => {
     useLayoutEffect(() => {
         const ctx = gsap.context(() => {
             const firstItem = scrollRef.current?.querySelector(".item") as HTMLElement;
-            gsap.set(scrollRef.current,{x:-(firstItem.offsetWidth / 2)});
+            gsap.set(scrollRef.current,{x:-(firstItem.offsetWidth / 2),y:"-50%"});
             const tl = gsap.timeline({scrollTrigger:{trigger:containerRef.current,start:"top top",end:"+=8000",pin:true,scrub:1}});
             tl.from(".top_txt",{y:50,opacity:0})
             .from(".bottom_txt",{y:50,opacity:0})
